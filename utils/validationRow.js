@@ -1,7 +1,6 @@
-function validateRow(
-  [id, title, version, artist, isrc, pLine, aliases, contractName],
-  rowIndex
-) {
+function validateRow(row, rowIndex) {
+  const [, title, , , isrc, , ,] = row; // keep the rest for future validations
+
   let isValid = true;
   let errors = [];
 
