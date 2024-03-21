@@ -8,16 +8,16 @@ This project provides a Node.js script for importing track data from an Excel sp
 ```
 .
 ├── models
-│ ├── Contract.js
-│ └── Track.js
+  ├── Contract.js
+  └── Track.js
 ├── src
-│ ├── database.js
-│ └── importData.js
+  ├── database.js
+  └── importData.js
 ├── test
-│ └── importData.test.js
+  └── importData.test.js
 └── utils
-├── processRow.js
-└── validationRow.js
+  ├── processRow.js
+  └── validationRow.js
 ├── Track Import Test.xlsx
 ├── package-lock.json
 ├── package.json
@@ -41,12 +41,9 @@ This project provides a Node.js script for importing track data from an Excel sp
 
 First, clone the repository to your local machine:
 
-`
-git clone https://github.com/mysr3809/assignment-fuga.git
-`
-`
-cd assignment-fuga
-`
+`git clone https://github.com/mysr3809/assignment-fuga.git`
+
+`cd assignment-fuga`
 
 Then install the project dependencies with `npm install`.
 
