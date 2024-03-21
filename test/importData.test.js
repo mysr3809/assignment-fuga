@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import validateRow from "../utils/validationRow.js";
+import processRowData from "../utils/processRow.js";
 
 describe("Row Validation", function () {
   it("should validate a row successfully", function () {
@@ -76,5 +77,19 @@ describe("Row Validation", function () {
 
     expect(isValid).to.be.true;
     expect(errors).to.be.empty;
+  });
+});
+
+describe("Row Data Processing", function () {
+  it("should ISRC be cleaned", function () {
+    const rawISRC = "ISRC 1";
+    const { isrc } = processRowData(rawISRC, "");
+    expect(isrc).to.equal("ISRC1");
+  });
+
+  it("should split aliases into an array", function () {
+    const rawAliases = "alias1;alias2";
+    const { aliasesArray } = processRowData("ISRC1", rawAliases);
+    expect(aliasesArray).to.deep.equal(["alias1", "alias2"]);
   });
 });
