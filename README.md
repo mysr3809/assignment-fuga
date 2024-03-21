@@ -5,7 +5,7 @@
 This project provides a Node.js script for importing track data from an Excel spreadsheet into a MongoDB database using Mongoose. It handles data validation, processes ISRC codes and aliases, checks for duplicate entries, and associates tracks with contracts if a match is found in the database.
 
 ## Code Structure
-`
+```
 .
 ├── models
 │ ├── Contract.js
@@ -21,7 +21,7 @@ This project provides a Node.js script for importing track data from an Excel sp
 ├── Track Import Test.xlsx
 ├── package-lock.json
 ├── package.json
-`
+```
 
 ## Features
 
@@ -43,6 +43,8 @@ First, clone the repository to your local machine:
 
 `
 git clone https://github.com/mysr3809/assignment-fuga.git
+`
+`
 cd assignment-fuga
 `
 
