@@ -1,9 +1,9 @@
 import { expect } from "chai";
-import validateRow from "../utils/validationRow.js";
+import validateRow from "../utils/validateRow.js";
 import processRowData from "../utils/processRow.js";
 
 describe("Row Validation", function () {
-  it("should validate a row successfully", function () {
+  it("should validate a row successfully with all required fields", function () {
     const row = [
       null,
       "Track 1",

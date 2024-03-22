@@ -2,7 +2,7 @@ import connectDB from "./database.js";
 import readXlsxFile from "read-excel-file/node";
 import Track from "../models/Track.js";
 import Contract from "../models/Contract.js";
-import validateRow from "../utils/validationRow.js";
+import validateRow from "../utils/validateRow.js";
 import processRowData from "../utils/processRow.js";
 
 async function importData() {

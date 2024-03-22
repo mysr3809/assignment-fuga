@@ -5,6 +5,7 @@
 This project provides a Node.js script for importing track data from an Excel spreadsheet into a MongoDB database using Mongoose. It handles data validation, processes ISRC codes and aliases, checks for duplicate entries, and associates tracks with contracts if a match is found in the database.
 
 ## Code Structure
+
 ```
 .
 ├── models
@@ -16,8 +17,8 @@ This project provides a Node.js script for importing track data from an Excel sp
 ├── test
   └── importData.test.js
 └── utils
-  ├── processRow.js
-  └── validationRow.js
+├── processRow.js
+└── validateRow.js
 ├── Track Import Test.xlsx
 ├── package-lock.json
 ├── package.json
